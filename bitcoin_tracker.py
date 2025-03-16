@@ -55,7 +55,7 @@ def check_price():
     if price_change_percentage > 3:
         send_notification(current_price, previous_day_price)
     else:
-        print("Price drop is less than 1%. No notification sent.")
+        print("Price drop is less than 3%. No notification sent.")
 
 # Run the script once
 check_price()
